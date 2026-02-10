@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Flow Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>✨ Task Flow Board</h1>
+        <p>Organize. Track. Achieve.</p>
+    </div>
+
+    <div class="container">
+
+        <!-- To Do Column -->
+        <div class="column" id="todo">
+            <h2>📝 To Do</h2>
+            <div class="input-container">
+                <input type="text" class="taskInput" placeholder="Enter task...">
+                <button onclick="addTask('todo')">Add</button>
+            </div>
+            <div class="task-list"></div>
+        </div>
+
+        <!-- In Progress Column -->
+        <div class="column" id="inprogress">
+            <h2>⏳ In Progress</h2>
+            <div class="input-container">
+                <input type="text" class="taskInput" placeholder="Enter task...">
+                <button onclick="addTask('inprogress')">Add</button>
+            </div>
+            <div class="task-list"></div>
+        </div>
+
+        <!-- Done Column -->
+        <div class="column" id="done">
+            <h2>✅ Done</h2>
+            <div class="input-container">
+                <input type="text" class="taskInput" placeholder="Enter task...">
+                <button onclick="addTask('done')">Add</button>
+            </div>
+            <div class="task-list"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
